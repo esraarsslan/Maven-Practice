@@ -9,7 +9,7 @@ public class ExecuteQuery_01 {
 
         //1. Örnek:  region id'si 1 olan "country name" değerlerini çağırın.
 
-        String sql1 = "SELECT country_name FROM countries WHERE region_id = 1";
+        String sql1 = "SELECT country_name FROM countries WHERE region_id = 1";// DQL kullandik ve tru aldik
         boolean r1 = st.execute(sql1);System.out.println("r1 = " + r1);
 
         //Recordları görmek için ExecuteQuery() methodunu kullanmalıyız.
@@ -18,7 +18,8 @@ public class ExecuteQuery_01 {
         while (resultSet1.next()){
 
 
-            System.out.println(resultSet1.getString(1));
+            System.out.println(resultSet1.getString(1));// sutun adi olan country name i de yazabilirdik numarasi 1 oldugu icin 1 de diyebiliyoruz
+
 
         }
 
@@ -46,7 +47,7 @@ public class ExecuteQuery_01 {
             System.out.println(resultSet3.getInt(1)+"--"+resultSet3.getString(2)+"--"+resultSet3.getInt(3));
 
         }
-
+// KAPATMA ISLEMI*****
         con.close();
         st.close();
     }

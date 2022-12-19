@@ -43,7 +43,7 @@ public class Execute01 {
         2) Eğer execute() methodu DQL için kullanılırsa ResultSet alındığında 'true' aksi hale 'false' verir.
          */
 
-        //5. Adım: Bağlantı ve Statement'ı kapat.
+        //5. Adım: Bağlantı ve Statement'ı kapat. fatura sismesin:)
 
         con.close();
         st.close();
